@@ -55,9 +55,9 @@ jobs:
     needs: ocis
     strategy:
       matrix:
-        registry: ["ghcr.io/ngam"]
-        subject: ["cgc", "dkdf"]
-        container: ["pt", "tf"]
+        reg: ["ghcr.io/ngam"]
+        sub: ["cgc", "dkdf"]
+        con: ["pt", "tf"]
     runs-on: ubuntu-20.04
     permissions:
       contents: read
